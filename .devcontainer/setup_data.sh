@@ -20,11 +20,11 @@ fi
 # 2. Plant Cell 2025
 PC=~/BMSi/PlantCell2025; mkdir -p $PC
 for m in RNAseq TMT Enrichment MOFA; do
-  if [ -d "$PC/$m" ]; then echo "PlantCell2025/$m already there"; continue; fi
+  if [ -f "$PC/$m/.downloaded" ]; then echo "PlantCell2025/$m already there"; continue; fi
   z=MOOC_PlantCell_$m.zip
   echo "Downloading $z..."
   if curl -fsSL --retry 3 -o "$PC/$z" "$RELEASE/$z"; then
-    mkdir -p "$PC/$m" && unzip -n -q "$PC/$z" -d "$PC/$m" && rm -f "$PC/$z"
+    mkdir -p "$PC/$m" && unzip -n -q "$PC/$z" -d "$PC/$m" && rm -f "$PC/$z" && touch "$PC/$m/.downloaded"
   else
     rm -f "$PC/$z"; echo "WARNING: $z could not be downloaded; run this script again later: bash $0"
   fi
