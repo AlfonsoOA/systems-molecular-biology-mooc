@@ -3,7 +3,7 @@
 *Every number depends on a choice.* A MOOC based on the computer practicals of
 *Systems Molecular Biology* (University of Córdoba), hosted by DTU.
 
-A MOOC on the analysis of omics data, from raw reads and mass-spectrometry reports to
+The analysis of omics data, from raw reads and mass-spectrometry reports to
 biology: genome assembly, RNA-seq, proteomics, functional enrichment and multi-omics
 integration. Each session has two parts:
 
