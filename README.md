@@ -71,3 +71,7 @@ A GitHub account includes 120 core-hours a month; this codespace has 4 cores, so
   caches of the long steps are).
 - **Scripts:** `scripts/PlantCell2025`. Their data folder is `~/BMSi/PlantCell2025/<block>`
   unless the variables `RNA_BASE`, `PROT_BASE`, `ENRICH_BASE` or `MOFA_BASE` say otherwise.
+
+## Licence and citation
+
+Teaching materials: CC BY 4.0 (LICENSE-CONTENT.md). Code: MIT (LICENSE). How to cite: CITATION.cff.

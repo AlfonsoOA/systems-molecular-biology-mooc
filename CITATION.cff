@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use these materials, please cite them as below."
+title: "Same Data, Different Answers: Robust Omics Data Analysis from Reads to Biology (MOOC materials)"
+abstract: "Materials, scripts and cloud environment of a MOOC on omics data analysis built on the computer practicals of Systems Molecular Biology (University of Córdoba): genome assembly, RNA-seq, label-free and TMT proteomics, functional enrichment and multi-omics integration, with a re-analysis of Dupuis, Ojeda et al. 2025 (The Plant Cell). Every step compares alternative pipelines and measures how much each choice changes the result."
+authors:
+  - family-names: "Olaya-Abril"
+    given-names: "Alfonso"
+    orcid: "https://orcid.org/0000-0002-8961-1099"
+    affiliation: "Department of Biochemistry and Molecular Biology, University of Córdoba, Spain"
+license: [CC-BY-4.0, MIT]
+repository-code: "https://github.com/AlfonsoOA/systems-molecular-biology-mooc"
+keywords: ["omics", "bioinformatics", "RNA-seq", "proteomics", "MOOC", "reproducibility", "GitHub Codespaces"]
+type: software
