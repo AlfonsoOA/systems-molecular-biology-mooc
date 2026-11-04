@@ -1,6 +1,7 @@
-# Systems Molecular Biology: Hands-on Omics Data Analysis
+# Same Data, Different Answers: Robust Omics Data Analysis from Reads to Biology
 
-*Every number depends on a choice.*
+*Every number depends on a choice.* A MOOC based on the computer practicals of
+*Systems Molecular Biology* (University of Córdoba), hosted by DTU.
 
 A MOOC on the analysis of omics data, from raw reads and mass-spectrometry reports to
 biology: genome assembly, RNA-seq, proteomics, functional enrichment and multi-omics

@@ -3,7 +3,7 @@
   // "Systems Molecular Biology" (AlfonsoOA/bmsi-practicals) plus the packages of the
   // Plant Cell 2025 re-analysis, a 4-core / 16 GB machine, the data of both parts in
   // ~/BMSi and RStudio opening in a browser tab.
-  "name": "Systems Molecular Biology: Hands-on Omics Data Analysis (MOOC)",
+  "name": "Same Data, Different Answers (MOOC)",
   "image": "ghcr.io/alfonsooa/bmsi-mooc:2026-27",
   "hostRequirements": { "cpus": 4, "memory": "16gb", "storage": "32gb" },
   "postCreateCommand": "bash .devcontainer/setup_data.sh",
