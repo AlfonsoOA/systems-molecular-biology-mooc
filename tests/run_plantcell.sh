@@ -24,3 +24,9 @@ done
 for d in PC1_assembly PC2_RNAseq PC3_Proteomics PC4_Enrichment; do
   [ -d ~/BMSi/$d ] && echo "| Core data $d | OK | | |" || echo "| Core data $d | MISSING | | |"
 done
+
+# Caches of the slow steps of the enrichment (GSEA, resampling), to add to
+# MOOC_PlantCell_Enrichment.zip so that learners do not recompute them (~35 min)
+mkdir -p $LOGS/enrichment_caches
+( cd ~/BMSi/PlantCell2025/Enrichment && find results_Enrichment -name "*.rds" -path "*3_Enrichment*" -o -name "*.rds" -path "*6_Resampling/cache*" | \
+  zip -q $LOGS/enrichment_caches/Enrichment_caches.zip -@ ) 2>/dev/null
