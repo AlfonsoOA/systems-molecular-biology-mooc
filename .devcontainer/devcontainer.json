@@ -1,0 +1,19 @@
+{
+  // What MOOC learners get when they create a codespace: the image of the course
+  // "Systems Molecular Biology" (AlfonsoOA/bmsi-practicals) plus the packages of the
+  // Plant Cell 2025 re-analysis, a 4-core / 16 GB machine, the data of both parts in
+  // ~/BMSi and RStudio opening in a browser tab.
+  "name": "Systems Molecular Biology: Hands-on Omics Data Analysis (MOOC)",
+  "image": "ghcr.io/alfonsooa/bmsi-mooc:2026-27",
+  "hostRequirements": { "cpus": 4, "memory": "16gb", "storage": "32gb" },
+  "postCreateCommand": "bash .devcontainer/setup_data.sh",
+  "postAttachCommand": "bash .devcontainer/start_rstudio.sh",
+  "forwardPorts": [8787],
+  "portsAttributes": {
+    "8787": { "label": "RStudio", "onAutoForward": "silent" }
+  },
+  "customizations": {
+    "codespaces": { "openFiles": ["README.md"] },
+    "vscode": { "extensions": ["-REditorSupport.r"] }   // RStudio is the editor; the R extension only adds R processes (memory)
+  }
+}
