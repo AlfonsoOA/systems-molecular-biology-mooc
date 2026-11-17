@@ -29,10 +29,11 @@ and the data. Nothing to install.
 5. When the **Terminal** at the bottom shows "RStudio is ready", Ctrl + click on the address
    (`https://<your-codespace>-8787.app.github.dev`). Never use `localhost:8787`.
 
-## Every following session
+## Every session: one codespace, deleted at the end
 
-Go to [github.com/codespaces](https://github.com/codespaces) and open **the same codespace**.
-Do not create a new one: your results are kept in the one you already have.
+Create a codespace when you start working (about 10 minutes), keep your results at the end
+(`pack_results.sh` for the Core sessions; Files → More → Export for the Plant Cell results) and
+**delete it** (github.com/codespaces → **…** → **Delete**). Have only one codespace at a time.
 
 ## Where things are
 
@@ -49,9 +50,10 @@ script writes). Before each script: **Session → Restart R**.
 
 ## Free usage
 
-A GitHub account includes 120 core-hours a month; this codespace has 4 cores, so that is
-**30 hours of use a month**. Stop the codespace when you finish (github.com/codespaces → **…**
-→ **Stop codespace**) and delete it when the course is over.
+A GitHub account includes 120 core-hours a month (this codespace has 4 cores: **30 hours of use
+a month**) and **15 GB-month of storage**. A codespace takes 15–20 GB for as long as it exists,
+even when stopped, so keeping one for two weeks uses up the month's storage and GitHub blocks
+Codespaces until the next month. Delete it when you finish each session.
 
 ---
 
